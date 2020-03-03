@@ -1,0 +1,5 @@
+/*CSS code to show which form field are currently invalid*/
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}

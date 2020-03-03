@@ -1,0 +1,30 @@
+{
+  "angular": {
+    "funFact": "Originally, the rewrite of AngularJS was called 'Angular 2' by the team, but this led to confusion among developers.",
+    "description": "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.",
+    "developer": "Google",
+    "releaseDate": "14 September 2016",
+    "picture": "Angular.png"
+  },
+  "java": {
+    "funFact": "In one year Java gets downloaded one billion times.",
+    "description": "Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.",
+    "developer": "Sun Microsystems",
+    "releaseDate": "May 23, 1995",
+    "picture": "java.png"
+  },
+  "C": {
+    "funFact": "C is the only language that exists for the longest period of time in computer programming history.",
+    "description": "C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, while a static type system prevents unintended operations.",
+    "developer": " Dennis Ritchie & Bell Labs (creators)",
+    "releaseDate": "Between 1972 and 1973",
+    "picture": "C.png"
+  },
+  "python": {
+    "funFact": "According to the creator Guido Van Rossum, the name of this language was derived from the British comedy series 'Monty Python's Flying Circus'.",
+    "description": "Python is an interpreted, high-level, general-purpose programming languages.",
+    "developer": "Guido van Rossum",
+    "releaseDate": "Introduced 1991",
+    "picture": "python.png"
+  }
+}

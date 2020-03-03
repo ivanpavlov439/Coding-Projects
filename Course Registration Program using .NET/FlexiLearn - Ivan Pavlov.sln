@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexiLearn - Ivan Pavlov", "FlexiLearn - Ivan Pavlov\FlexiLearn - Ivan Pavlov.csproj", "{94FEA783-4CF2-4C60-B925-986FABBE84BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexiLearn - ClassLibrary", "FlexiLearn - ClassLibrary\FlexiLearn - ClassLibrary.csproj", "{37A82A34-A633-4D36-88FD-BBDC6F5EA530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94FEA783-4CF2-4C60-B925-986FABBE84BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FEA783-4CF2-4C60-B925-986FABBE84BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FEA783-4CF2-4C60-B925-986FABBE84BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FEA783-4CF2-4C60-B925-986FABBE84BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A82A34-A633-4D36-88FD-BBDC6F5EA530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A82A34-A633-4D36-88FD-BBDC6F5EA530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A82A34-A633-4D36-88FD-BBDC6F5EA530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A82A34-A633-4D36-88FD-BBDC6F5EA530}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD288DC9-3F77-4D0F-9C40-638DFEB01B33}
+	EndGlobalSection
+EndGlobal

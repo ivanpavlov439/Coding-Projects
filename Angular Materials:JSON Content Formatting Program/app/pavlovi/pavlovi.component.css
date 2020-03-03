@@ -1,0 +1,5 @@
+/*Styling for the flex container*/
+#flexbox {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,46 @@
+body, html {
+	font: 16px Calibri, Arial, sans-serif;
+}
+
+h1 {
+	color: #066;
+}
+
+div {
+	border: 1px solid #066;
+	border-radius: 3px;
+	padding: 0px;
+	margin: 7px;
+}
+
+div.header {
+	background-color: #066;
+	color: #066;
+	font-weight: bold;
+	padding: 5px;
+}
+
+div div {
+	border: 0px;
+	margin: 0px;
+	padding: 5px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 2px;
+}
+
+li {
+	border-left: 2px solid #066;
+	margin: 5px;
+	padding-left: 4px;
+}
+
+.errors {
+	border: 1px solid red;
+	color: red;
+	font-weight: bold;
+	margin: 7px;
+	padding: 7px;
+}

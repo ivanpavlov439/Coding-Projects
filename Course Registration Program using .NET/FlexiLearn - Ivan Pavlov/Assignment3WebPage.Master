@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Assignment3WebPage.master.cs" Inherits="FlexiLearn___Ivan_Pavlov.Assignment3WebPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!--Creating hyperlinks for all web pages as well as a log out button link-->
+        <asp:HyperLink runat="server" NavigateUrl="Login.aspx" Text="Login"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="GetMembership.aspx" Text="Register"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="User/UserDashboard.aspx" Text="User Dashboard"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="User/CourseRegistration.aspx" Text="Course Registration"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="Admin/AdminDashboard.aspx" Text="Admin Dashboard" ID="HypAdmin"></asp:HyperLink>
+        <asp:LinkButton ID="LnkLogout" runat="server" Text="Logout" OnClick="LnkLogout_OnClick"></asp:LinkButton>
+
+        <div>
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

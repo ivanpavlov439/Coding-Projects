@@ -1,0 +1,30 @@
+{
+  "windows": {
+    "funFact": "Windows 95 was a smash hit upon release, selling 40 million copies in its first year. Windows 8 sold 100 million licenses in half the time.",
+    "progLanguage": "C++, C#, Assembly language",
+    "developer": "Microsoft Corporation",
+    "releaseDate": "November 20, 1985",
+    "picture": "windows.jpg"
+  },
+  "mac": {
+    "funFact": "OS X releases are named after kinds of big cats and have a version number that starts with 10.",
+    "progLanguage": "C++, Objective-C, Swift",
+    "developer": "Apple",
+    "releaseDate": "March 24, 2001",
+    "picture": "mac.jpg"
+  },
+  "linux": {
+    "funFact": "More than 90% of current Linux source code is written by other developers (and not Linus Torvalds himself).",
+    "progLanguage": "C, Assembly language",
+    "developer": "Open Source",
+    "releaseDate": "September 17, 1991",
+    "picture": "linux.png"
+  },
+  "android": {
+    "funFact": "Android Version Name Is Based On The Sweet Treats Or Desserts.",
+    "progLanguage": "Java, C, C++, XML, Assembly language, Python, Shell script, Go, Make, D",
+    "developer": "Various (mostly Google and the Open Handset Alliance)",
+    "releaseDate": "September 23, 2008",
+    "picture": "android.png"
+  }
+}

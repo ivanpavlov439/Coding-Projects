@@ -1,0 +1,49 @@
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" [ngStyle]="{'text-align' : 'center'}">
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Systems &nbsp;&nbsp; <mat-icon>filter_1</mat-icon>
+    </ng-template>
+    <section id="flexbox">
+      <button mat-raised-button (click)="displaySystem(0)">
+        Windows
+      </button>
+      <button mat-raised-button (click)="displaySystem(1)">
+        Mac
+      </button>
+      <button mat-raised-button (click)="displaySystem(2)">
+        Linux
+      </button>
+      <button mat-raised-button (click)="displaySystem(3)">
+        Android
+      </button>
+    </section>
+    <div>
+      <p [innerHTML]="outAreaSystems"></p>
+    </div>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      Languages &nbsp;&nbsp; <mat-icon>filter_2</mat-icon>
+    </ng-template>
+    <section id="flexbox">
+      <button mat-raised-button (click)="displayLanguage(0)">
+        Angular
+      </button>
+      <button mat-raised-button (click)="displayLanguage(1)">
+        Java
+      </button>
+      <button mat-raised-button (click)="displayLanguage(2)">
+        C
+      </button>
+      <button mat-raised-button (click)="displayLanguage(3)">
+        Python
+      </button>
+    </section>
+    <div>
+      <p [innerHTML]="outAreaLanguages"></p>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+<hr>

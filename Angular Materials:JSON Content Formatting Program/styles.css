@@ -1,0 +1,75 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/*Styling for the header*/
+header {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 5px crimson double;
+  background-color: aqua;
+  text-align: center;
+}
+
+/*Styling for the footer*/
+footer {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 5px crimson double;
+  background-color: aqua;
+  text-align: center;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-tab-label-active {
+  font-weight: bold;
+  color: crimson;
+}
+
+/*Styling for the buttons*/
+button {
+  background-color: white; 
+  border: 2px solid #4CAF50;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/*Styling for the button when hovering over it*/
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}

@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ItemFinder.master.cs" Inherits="ItemFinder.ItemFinder" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!--Creating hyperlinks for all web pages as well as a log out button link-->
+        <asp:HyperLink runat="server" NavigateUrl="Login.aspx" Text="Login"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="Register.aspx" Text="Register"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="User/UserForm.aspx" Text="User Dashboard"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="User/AddForm.aspx" Text="Add Item"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="Admin/AdminForm.aspx" Text="Admin Dashboard" ID="HypAdminDash"></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="Admin/AdminRegister.aspx" Text="Register Admin" ID="HypAdminReg"></asp:HyperLink>
+        <asp:LinkButton ID="LnkLogout" runat="server" Text="Logout" OnClick="LnkLogout_OnClick"></asp:LinkButton>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
