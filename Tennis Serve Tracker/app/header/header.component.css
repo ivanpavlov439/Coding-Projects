@@ -1,0 +1,71 @@
+.container {
+  background-color: #0A3862;
+}
+
+h1 {
+  color: #6c6c6c;
+  text-shadow:#FFF 0px 0px 15px, black 0px 0px 20px, black 0px 0px 30px, black 0px 0px 40px, black 0px 0px 50px, black 0px 0px 75px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.images {
+  text-align: right;
+}
+
+.nav {
+  background-color: #6A859F !important;
+  border-radius: 5px;
+}
+
+.nav .nav-link {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nav .nav-link.active {
+  background-color: #3F5B7E;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.8em;
+    padding-top: 40px;
+  }
+
+  img {
+    width: 175px;
+    padding-top: 20px;
+  }
+
+  .navbar-brand.abs {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  img {
+    width: 130px;
+    padding: 10px;
+  }
+
+  .nav .nav-link {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .justify {
+    text-align: center;
+  }
+}
+

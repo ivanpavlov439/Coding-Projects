@@ -1,0 +1,35 @@
+.container {
+  background-color: #0a3862;
+  padding-bottom: 20px;
+  line-height: 32px;
+}
+
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  color: black;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    width: 1170px;
+  }
+}

@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row h-100 justify-content-center align-items-center">
+    <ngb-carousel pauseOnHover="false" interval="3500">
+      <ng-template ngbSlide *ngFor="let image of imageSources">
+        <div class="picsum-img-wrapper">
+          <img [src]="image">
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <br>
+  <div class="row h-100 justify-content-center align-items-center" style="background-color: #385B83;">
+    <h1 style="text-align: center;">Looking to measure your tennis serve speed?<br> It's the right place!</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      “Tennis Serve Tracker” is iOS and Android app that measures tennis serve speed using video
+      processing and image recognition technologies. Why is it worth trying it when there are
+      similar apps on market? Because all these apps can be split on 2 categories - first are
+      the ones that do it very, very bad or simply invent measured speed and won’t be mentioned
+      here at all. The others do measure the serve speed, but it’s a lot of manual interactions
+      with setting multiple parameters, like choosing deuce/ad serve type, server height,
+      marking server and ball positions on the standard court image template that has no
+      resemblance to the actual court we see with our eyes. These actions drastically increase
+      an error margin, time and effort required to perform a single serve speed measurement -
+      does it match fast pacing tennis game we all love?
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-5">
+      <div>
+        So how “Tennis Serve Tracker” measures tennis serve speed? The fundamental difference is
+        that it processes every single frame in the video feed and recognizes the court on the
+        image frame. It allows to reconstruct 3D world coordinates of the server and ball from
+        the image coordinates. Application provides constant feedback by highlighting court lines,
+        net and a ball on the screen. Now having the time measurements from the video and ball
+        world coordinates application can calculate your serve speed with a great accuracy, most
+        times way better than a commercial speed gun (see doppler effect cosine factor error)!
+      </div>
+    </div>
+    <div class="col-md-7 embed-responsive embed-responsive-16by9">
+      <iframe
+        class="embed-responsive-item"
+        width="640"
+        height="350"
+        src="https://www.youtube.com/embed/WI4zkroHdzY"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      See it for yourself - visit
+      <a routerLink="/videos.html">Videos</a> page for videos with real time side by side comparison
+      between speed radar gun and the app.
+    </div>
+  </div>
+</div>

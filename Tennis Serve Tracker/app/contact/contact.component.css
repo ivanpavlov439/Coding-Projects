@@ -1,0 +1,20 @@
+.btn {
+  background-color: #6a859f;
+  border: 1px solid #3c8b9c;
+  color: whitesmoke;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #3c8b9c;
+  color: whitesmoke;
+}
+
+div {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/*CSS code to show which form field are currently invalid*/
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 2px solid red;
+}

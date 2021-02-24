@@ -1,0 +1,140 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      "Tennis Serve Tracker" app has several screens and settings that are explained
+      in details below, but here's a brief overview. First of all it's a "Start new
+      Tracking" screen that performs recognition. There is a custom video player that
+      allows you to review your tennis serve in frame by frame stepping mode with panning
+      & zooming features. You can navigate and manage your previous serve speed mesurements
+      using a "History" screen and a context dependent "Quick Tips" will provide additional
+      help and information within an app.
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <a [routerLink]='"."' fragment="new_tracking">How to start new tracking?</a><br>
+      <a [routerLink]='"."' fragment="court_failed">Why app fails to recognize court or recognition is not stable?</a><br>
+      <a [routerLink]='"."' fragment="auto_failed">Why automatic ball recognition failed?</a><br>
+      <a [routerLink]='"."' fragment="orange_speed">Why speed is displayed in orange?</a><br>
+      <a [routerLink]='"."' fragment="manual_tracking">How to perform manual tracking?</a><br>
+      <a [routerLink]='"."' fragment="marking_failed">Why marking server or bounce point positions doesn't work?</a><br>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 [attr.id]="'new_tracking'">How to start new tracking?</h3>
+      <div>
+        Click "Start new Tracking" panel on a home screen to perform new tennis serve speed mesure.
+        Position your camera and adjust it's field of view according to the image below. Application
+        should capture the court position and start indicating it on preview by drawing green lines
+        alone the court & net boundaries. If it's the case then you're ready for serve tracking,
+        otherwise read
+        <a [routerLink]='"."' fragment="court_failed">Why app fails to recognize court or recognition is not stable?</a><br>
+      </div>
+      <br>
+      <div>
+        <img
+        src="https://firebasestorage.googleapis.com/v0/b/tennis-serve-tracker.appspot.com/o/courtPosition.png?alt=media&token=b161c9b3-8b82-4df2-a291-13c56e2bac5f"
+        alt="Camera Angles"
+        class="img-fluid">
+      </div>
+      <br>
+      <div>
+        Once a consistent court position tracking is detected by app the camera preview caption will
+        change to "Touch screen to begin...". Once you touch the screen the video will start recording
+        and tennis serve must be executed within allocated time period (video recording time limit is
+        indicated on caption and configurable in settings). The video recording will end if you tap the
+        screen again or it reaches time limit. To abort current tracking (serve fault for example) click
+        "back" button. Once recording finished the actual processing will start and will last around 2-4
+        seconds. It's done on the video instead of the camera preview because most devices do not provide
+        consistent frame rate during camera preview, only on video.
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 [attr.id]="'court_failed'">Why app fails to recognize court or recognition is not stable?</h3>
+      <div>
+        "Tennis Serve Tracker" is recognizing court position almost 100%. Actually, testing it in multiple
+        conditions and locations we never had it failed - at the end without stable court recognition you
+        can't do any tracking! Try to follow simple steps below in order to resolve this problem:
+      </div>
+      <ul>
+        <li>Make sure to position camera as explained and shown above;</li>
+        <li>Try to move camera slowly when searching for a court and do not shake it;</li>
+        <li>App is using "auto focus" camera feature if available. Make sure it's focused on the court;</li>
+        <li>Try to move to another court if possible;</li>
+        <li>If it's still not working make court picture and send it to us to investigate.</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 [attr.id]="'auto_failed'">Why automatic ball recognition failed?</h3>
+      <div>
+        In outdoor conditions with natural light ball recognition success is over 90%. There are multiple
+        factors that can prevent successful ball recognition, but if you try to eliminate most common your
+        success rate will be higher:
+      </div>
+      <ul>
+        <li>Poor light conditions (indoor or artificial light is not sufficient);</li>
+        <li>Keep recognition video short and do not move camera off or around a recognized court during recording;</li>
+        <li>Use relatively new balls with distinct standard "optic yellow" color;</li>
+        <li>Travelling service ball path background contains a lot of yelow color noise, for example multiple
+            balls lying in the service box or yellow wall behind the server;</li>
+        <li>Poor mobile camera hardware;</li>
+        <li style="text-decoration: underline;">Rule of thumb - if you can barely see the ball on the video frame
+            it's practically impossible to do it in the app!</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 [attr.id]="'orange_speed'">Why speed is displayed in orange?</h3>
+      <div>
+        If speed is displayed in orange it means server position adjustment for automatic tracking or
+        ball positions for manual tracking are required to finalize recogniton. For automatic adjust
+        sever position using "server" player control - long touch the button to start drag-n-drop
+        operation and drop it on a server. App player will pre-roll the video to the correct frame when
+        service had started. For a manual mark 2 ball positions - when racket hits the ball and when ball
+        hits the court. When done click "calculate" to perform final speed calculation.
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 [attr.id]="'manual_tracking'">How to perform manual tracking?</h3>
+      <div>
+        When automatic recogniton failed (read
+        <a [routerLink]='"."' fragment="auto_failed">Why automatic ball recognition failed?</a>
+        ), app will allow you to perform manual recogniton. All you have to do is to mark 2 ball
+        positions - when racket hits the ball and ball hits the court. When finished click "calculate"
+        button to calculate speed. Use pan and zoom player functionality for better precision.
+      </div>
+      <br>
+      <div>
+        <img
+        src="https://firebasestorage.googleapis.com/v0/b/tennis-serve-tracker.appspot.com/o/courtExampleLegend.png?alt=media&token=bfad3349-bda9-4df4-ab29-9f6ee8ed59db"
+        alt="User Interface Legend"
+        class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 [attr.id]="'marking_failed'">Why marking server or bounce point positions doesn't work?</h3>
+      <div>
+        Depending of the deuce or ad serve you're trying to mark server or ball positions outside of
+        allowed boundaries. For example, marking server position on a deuce court side will not work for
+        an ad serve; or marking bounce point way outside the service box boundaries.
+      </div>
+    </div>
+  </div>
+</div>
